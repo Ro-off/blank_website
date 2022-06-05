@@ -1,3 +1,225 @@
-body{
+body {
+    background: #dbe7f0;
+    margin: 0;
+}
 
+header {
+    height: 6vh;
+    width: 100%;
+    min-height: 50px;
+    max-height: 70px;
+    background: #f8f9f9;
+    box-shadow: #1d273110 0px 3px 8px;
+    position: fixed;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.LogoAndTitleContainer {
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 100%;
+}
+
+.LogoInkom {
+    padding-left: 15px;
+    padding-right: 8px;
+    align-self: center;
+    height: 5vh;
+    min-height: 35px;
+    max-height: 50px;
+    width: auto;
+}
+
+.LogoAndTitleContainer h1 {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.7em;
+    font-weight: 500;
+    color: #22282c;
+    align-self: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header nav {
+    align-items: center;
+    justify-content: center;
+    justify-self: right;
+    display: flex;
+}
+
+.ContactButton {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: max-content;
+    /*max-width: 30vw;*/
+    height: 60%;
+    background: #d0dee9;
+    border-radius: 13px;
+    margin-right: 20px;
+    align-items: center;
+    border: none;
+}
+
+.bi-headset {
+    font-size: 1.0em;
+    color: #22282c;
+    margin-right: 3px;
+}
+
+.ContactButton p {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #22282c;
+    /*HOW TO PLACE IT IN FUCKING CENTER!!!!????*/
+}
+
+.HeaderSpacer {
+    height: 6vh;
+    width: 100%;
+    min-height: 50px;
+    max-height: 70px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.SellingCard {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% min-content 23% 10% 17%;
+    min-height: 35rem;
+    width: 20rem;
+    min-width: 35vh;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background: #E9EFEF;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.SellingCard img {
+    width: 91%;
+    height: 89%;
+    object-fit: cover;
+    border-radius: 2rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.SellingCard span {
+    padding-left: 1.2rem;
+    height: min-content;
+    margin-bottom: 0.5rem;
+}
+
+.SellingCard span h2 {
+    font-size: 1.4em;
+    color: #30393F;
+    margin-top: 0;
+    margin-bottom: 0.1rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.SellingCard span h4 {
+    font-size: 1.0em;
+    font-weight: 500;
+    color: #7F878B;
+    margin-top: 0.1rem;
+    margin-bottom: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.SellingCard p {
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #7F878B;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    padding-left: 1.2rem;
+}
+
+.SellingCard p:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(180deg, transparent, #E9EFEF 70%);
+}
+
+#InfoTable {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: min-content min-content min-content;
+    grid-gap: 0.5rem;
+    align-items: center;
+    justify-items: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    gap: 0px;
+    margin: auto;
+    width: 90%;
+}
+
+#InfoTable span {
+    width: 90%;
+    color: #6b767c;
+    margin-top: 0.1rem;
+    margin-bottom: 0.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.8em;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+}
+
+#Price {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #22282c;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    font-family: 'Ubuntu', sans-serif;
+    align-items: center;
+}
+
+#Price h2 {
+    margin-bottom: 0.1rem;
+    margin-right: 1.4rem;
+    text-align: right;
+    color: #3d4449;
+    border-style: none;
+}
+
+#Price h6 {
+    margin-top: 0.1rem;
+    margin-right: 1.4rem;
+    text-align: right;
+    color: #9ea7ac;
 }
